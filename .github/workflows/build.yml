@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
-name: Get Date
+        name: Get Date
         id: get-date
         run: |
           echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
